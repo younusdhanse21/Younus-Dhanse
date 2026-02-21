@@ -1,0 +1,74 @@
+#syntax
+#open (filename, mode)
+f = open ("demo1.txt", "w")
+f.close()
+file =open ("filehandLing_demo.txt","w")
+file.write("hello, world!\n some text sentence")
+
+
+
+with open("demo1.txt", "w"):
+    f.write("hello, world!\n")
+    f.write("python is great!\n")
+    f.write("line three.\n")
+    
+    
+    
+#reading entire file
+fileobj = open ("demo1.txt", "r")
+fileobj.read()
+fileobj.close()
+
+
+
+with open ("demo1.txt", "r") as f :
+    content =f.read()
+    print(content)
+
+
+#read line by line
+with open("demo1.txt", "r") as f :
+    for line in f:
+        print(line.strip())
+        
+        
+with open("demo1.txt", "r") as f :
+    for line in f :
+        print(line)
+        
+        
+with open("demo1.txt", "r") as f:
+    line = f.readlines()
+    print(line)
+    
+#read single line
+with open("demo1.txt", "r") as f:
+    first = f.readline()
+    print(first.strip())
+    
+    
+#append to file 
+with open("demo1.txt", "a") as f :
+    f.write("new line added!\n")
+
+
+#read + write (r+)
+with open("demo1.txt", "r+") as f:
+    content = f.read()
+    f.write("Appended via r+\n")
+
+    print(content)
+    
+    
+#check if file exists
+
+import os
+if os.path.exists("demo1.txt"):
+    print("file exists!")
+    print(f"size: {os.path.getsize('demo1.txt')} bytes")
+         
+
+    
+    
+    
+    
