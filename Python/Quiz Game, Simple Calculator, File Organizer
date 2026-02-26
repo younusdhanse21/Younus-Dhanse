@@ -1,0 +1,59 @@
+def quiz_game ():
+    qa = {"What is 2+2?":"4","python is a snake?(yes/no)" : "yes","I have a head and a tail but no body" : "coin"} 
+    score=0
+    for q, a in qa.items():
+        if input (q+ " ").strip().lower()==a: score +=1
+    print(f"Final score:{score}/{len(qa)}")
+    
+    
+    
+    
+quiz_game ()
+
+
+
+
+#a simple calculator
+
+def simple_calculator():
+    print("\n---1 simple calculator ---")
+    try:
+        n1=float(input("enter first number:"))
+        op=input("enter operator(+,-,*,/):")
+        n2=float(input("enter second number:"))
+        if op =='+':print(f"result:{n1+n2}")
+        elif op =='-':print(f"result:{n1-n2}")
+        elif op =='*':print(f"result:{n1*n2}")
+        elif op =='/':print(f"result:{n1/n2}" if n2!=0 else "error: div by 0")
+        else:print("invalid operator")
+    except valueError:print("Error: please enter number only")
+        
+
+
+simple_calculator()
+
+
+
+
+
+#file organizer (logic only) // pseudocode in notebook
+
+import os, shutil
+def organize_files(folder_path):
+    #This script moves files into folders based on exension
+    #usage: organize_files('c:/USERS/DOWNLOADS')
+    for file in os.listdir(folder_path):
+        ext= file.split('.')[-1]
+        os.makedirs(os.path.join(folder_path, ext), exist_ok=True)
+        shutil.move(os.path.join(folder_path, file), os.path.join(folder_path, ext, file))
+
+
+
+
+organize_files("C:\\Users\\hirwa\\OneDrive\\Desktop\\Younus AI")
+
+
+
+
+
+
