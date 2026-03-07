@@ -1,0 +1,23 @@
+
+
+import numpy as np
+# Creating arrays
+a = np.array([1, 2, 3, 4, 5,6]).reshape(3,2)
+print(a)
+matrix = np.arange(12).reshape(3, 4)
+print(matrix)
+b = np.zeros((3, 3))        # 3x3 of zeros
+print(b)
+c = np.ones((2, 4))    
+print(c)
+d = np.arange(0, 10, 2)
+d = np.arange(0, 10, 4)  
+print(d)
+e = np.linspace(0, 1, 5)  
+print(e)
+e = np.linspace(0, 1, 20)  
+print(e)
+print(a.ndim)
+print(d.ndim)
+
+
