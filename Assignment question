@@ -1,0 +1,177 @@
+# SECTION A - VARIABLES AND DATA TYPES 
+ 
+# 1) define variable of type : int float str bool complex 
+a = 10              # --> int
+b = 3.14            # --> float 
+c = "hello"         # --> str
+d = True            # --> bool
+e = 2+3j            # --> complex 
+
+# 2) identify the data types of the following: a=100, b=45.67, c="python", d=True, e=3=4j
+a = 100             # --> integer 
+b = 45.67           # --> float
+c ="python"         # --> string
+d = True            # --> boolean 
+e = 3+4j            # --> complex
+
+# 3) write five valid identifiers 
+student_name = "ravi"
+_mark        = 95 
+age2         = 20
+TOTAL        = 500
+myvar        = "ok"
+
+# 4) correct the following invaild identifiers 1name my-name class total marks @value
+# 1name          - name1 
+# my-anme        - my_name 
+# class          - class_name 
+# total marks    - total_marks
+# @value         - value
+
+# SECTION B - INPUT AND OUTPUT
+
+# 5) write a program to take a student's name and print : "welcome" 
+
+name = input("enter your name:")
+print("welcome", name) 
+
+# 6) write a program to take two iteger and print their sum 
+
+a = 4 
+b = 9 
+print(a+b)
+
+# 7) write a program to take age as input and print : your age is 
+
+age = int(input("enter your age :"))
+print("your age is:", age)
+
+# 8) write a program to take a number and print its square 
+
+a = 9 
+print(a*a)
+ 
+# SECTION C - ARITHMETIC OPERATORS
+
+# 9) write a program to perform : addition subtraction multiplication division modulus of two numbers 
+
+a = 4 
+b = 9 
+ 
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+
+# 10) write a program to calculate area of a rectangle formula : area = length*breath
+
+l=int(input("enter length:"))
+b=int(input("enter breath:"))
+
+area = l*b
+print("area is:", area)
+
+# 11) write a program to convert celsius to fahrenheit formula: F=(c*9/5)+32
+
+c=int(input("enter temperature in celsius:"))
+F=(c*9/5)+32
+print("temperature of fahrenheit is:", F)
+
+# 12) write a program to calculate simple interest formula : S1 = (P*R*T)/100
+
+P=int(input("enter a number"))
+R=int(input("enter a number"))
+T=int(input("enter a number"))
+
+S1=(P*R*T)/100
+print("interest formula is:",S1)
+
+# SECTION D - REALTIONAL AND LOGICAL OPERATORS 
+
+# 13) write a program to check whether a number is positive or negative 
+
+num = 9 
+ 
+if num > 0 : 
+    print("num is positive")
+else: 
+    print("num is negative")
+
+# 14) write a program to check whether a number is even or odd
+
+num=int(input("enter a number:"))
+if num % 2==0:
+    print("num is even")
+else:  
+    print("num is odd")
+
+# 15) take two numbers and check: if both are greater than 10. if at least one is less than 5
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+if num1 > 10 and num2 > 10:
+    print("Success: Both numbers are greater than 10.")
+elif num1 < 5 or num2 < 5:
+    print("Notice: One of the number is less than five.")
+else:
+    print("Notice: Both numbers are 5 or greater.")
+
+# 16) write a program to check voting eligiblity (age>=18)
+
+age=int(input("enter your age"))
+if age > 18:
+    print("you are eligible to vote.")
+elif age == 18: 
+    print("you are eligible to vote this year.")
+else:
+    print("you are not eligible to vote.")
+    
+# SECTION D - ASSIGNMENT OPERATORS 
+
+# 17) initalzea variable x = 10 and apply : x+=5 x-=3 x*=2 x/=4 
+
+# SECTION F - BITWISE OPERATORS 
+
+# 18) find the output : print(5&3) print(5/3) print(5^3)
+
+# Bitwise AND
+print(5 & 3)
+
+# Floating point division
+print(5 / 3)
+
+# Bitwise XOR (Exclusive OR)
+print(5 ^ 3)
+
+# 19) convert 6 and 3 into binary and preform: AND'&' or XOR'|'
+
+a=6 
+b=3
+
+print(f'6 in binary: {bin(a)}')  
+print(f'3 in binary: {bin(a)}')
+print(f'AND(&):{a&b}(binary:{bin(a&b)})')
+print(f'OR(|):{a|b}(binary:{bin(a|b)})')
+print(f'XOR(^):{a^b}(binary:{bin(a^b)})')
+ 
+# SECTION G - IDENTIY AND MEMBERSHIP OPERATORS 
+
+# 20) predict the output: a=[1,2,3] b=a c=[1,2,3] print(a is b) print(a is c) print(2 in a) print(5 not in a)
+
+a=[1,2,3]
+b=a
+c=[1,2,3]
+
+print(a is b)
+print(a is c)
+print(2 in a)
+print(5 not in a)
+
+
+
+
+
+
+
